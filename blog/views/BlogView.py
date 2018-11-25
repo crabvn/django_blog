@@ -1,0 +1,1 @@
+# Where the view for blog page

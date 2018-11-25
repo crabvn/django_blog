@@ -1,0 +1,12 @@
+.idea/
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+# blog/config/db/
+wanature/__pycache__/
+blog/__pycache__/
+blog/blog_settings.py
+blog/services/__pycache__
+blog/services/contentful/__pycache__

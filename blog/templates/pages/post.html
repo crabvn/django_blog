@@ -1,0 +1,14 @@
+{% extends "layouts/master.html" %}
+
+{% block header %}
+    {% include "sections/header/single-header.html" with title=post.title %}
+{% endblock header %}
+
+{% block content %}
+    <div class="container">
+        <h1>{{ post.title }}</h1>
+        <div class="content">
+            {{ post.content|safe }}
+        </div>
+    </div>
+{% endblock content %}
