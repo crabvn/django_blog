@@ -1,0 +1,19 @@
+{% extends "layouts/master.html" %}
+
+{% block header %}
+    {% include "sections/header/contact-header.html" %}
+{% endblock header %}
+
+{% block content %}
+    {% for item in posts %}
+        <div class="container">
+            <a href="{% url 'post' item.slug %}" title="{{ item.title }}">
+                <h2 class"text-capitalize">{{ item.title }}</h2>
+            </a>
+            <div class="content">
+                {{ item.description|safe }}
+            </div>
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock content %}
